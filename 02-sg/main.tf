@@ -1,5 +1,5 @@
 module mongodb{
-    source = "../../terraform-aws-securitygroup"
+    source = "git::https://github.com/divya-vegesna05/terraform-aws-securitygroup.git?ref=master"
     Project_name = var.Project_name
     Environment = var.Environment
     common_tags = var.common_tags
@@ -8,7 +8,7 @@ module mongodb{
     sg_description = "${var.sg_description}mongodb"
 }
 module catalogue{
-    source = "../../terraform-aws-securitygroup"
+    source = "git::https://github.com/divya-vegesna05/terraform-aws-securitygroup.git?ref=master"
     Project_name = var.Project_name
     Environment = var.Environment
     common_tags = var.common_tags
@@ -17,7 +17,7 @@ module catalogue{
     sg_description = "${var.sg_description}catalogue"
 }
 module redis{
-    source = "../../terraform-aws-securitygroup"
+    source = "git::https://github.com/divya-vegesna05/terraform-aws-securitygroup.git?ref=master"
     Project_name = var.Project_name
     Environment = var.Environment
     common_tags = var.common_tags
@@ -26,7 +26,7 @@ module redis{
     sg_description = "${var.sg_description}redis"
 }
 module mysql{
-    source = "../../terraform-aws-securitygroup"
+    source = "git::https://github.com/divya-vegesna05/terraform-aws-securitygroup.git?ref=master"
     Project_name = var.Project_name
     Environment = var.Environment
     common_tags = var.common_tags
@@ -35,7 +35,7 @@ module mysql{
     sg_description = "${var.sg_description}mysql"
 }
 module rabbitmq{
-    source = "../../terraform-aws-securitygroup"
+    source = "git::https://github.com/divya-vegesna05/terraform-aws-securitygroup.git?ref=master"
     Project_name = var.Project_name
     Environment = var.Environment
     common_tags = var.common_tags
@@ -44,7 +44,7 @@ module rabbitmq{
     sg_description = "${var.sg_description}rabbitmq"
 }
 module user{
-    source = "../../terraform-aws-securitygroup"
+    source = "git::https://github.com/divya-vegesna05/terraform-aws-securitygroup.git?ref=master"
     Project_name = var.Project_name
     Environment = var.Environment
     common_tags = var.common_tags
@@ -53,7 +53,7 @@ module user{
     sg_description = "${var.sg_description}user"
 }
 module shipping{
-    source = "../../terraform-aws-securitygroup"
+    source = "git::https://github.com/divya-vegesna05/terraform-aws-securitygroup.git?ref=master"
     Project_name = var.Project_name
     Environment = var.Environment
     common_tags = var.common_tags
@@ -62,7 +62,7 @@ module shipping{
     sg_description = "${var.sg_description}shipping"
 }
 module payment{
-    source = "../../terraform-aws-securitygroup"
+    source = "git::https://github.com/divya-vegesna05/terraform-aws-securitygroup.git?ref=master"
     Project_name = var.Project_name
     Environment = var.Environment
     common_tags = var.common_tags
@@ -71,7 +71,7 @@ module payment{
     sg_description = "${var.sg_description}payment"
 }
 module cart{
-    source = "../../terraform-aws-securitygroup"
+    source = "git::https://github.com/divya-vegesna05/terraform-aws-securitygroup.git?ref=master"
     Project_name = var.Project_name
     Environment = var.Environment
     common_tags = var.common_tags
@@ -80,7 +80,7 @@ module cart{
     sg_description = "${var.sg_description}cart"
 }
 module web{
-    source = "../../terraform-aws-securitygroup"
+    source = "git::https://github.com/divya-vegesna05/terraform-aws-securitygroup.git?ref=master"
     Project_name = var.Project_name
     Environment = var.Environment
     common_tags = var.common_tags
@@ -89,7 +89,7 @@ module web{
     sg_description = "${var.sg_description}web"
 }
 module "vpn" {
-     source = "../../terraform-aws-securitygroup"
+     source = "git::https://github.com/divya-vegesna05/terraform-aws-securitygroup.git?ref=master"
     Project_name = var.Project_name
     Environment = var.Environment
     common_tags = var.common_tags
@@ -98,7 +98,7 @@ module "vpn" {
     sg_description = "${var.sg_description}vpn"
 }
 module "app_alb" {
-     source = "../../terraform-aws-securitygroup"
+     source = "git::https://github.com/divya-vegesna05/terraform-aws-securitygroup.git?ref=master"
     Project_name = var.Project_name
     Environment = var.Environment
     common_tags = var.common_tags
@@ -107,7 +107,7 @@ module "app_alb" {
     sg_description = "${var.sg_description}applb"
 }
 module "web_alb" {
-     source = "../../terraform-aws-securitygroup"
+     source = "git::https://github.com/divya-vegesna05/terraform-aws-securitygroup.git?ref=master"
     Project_name = var.Project_name
     Environment = var.Environment
     common_tags = var.common_tags
